@@ -16,11 +16,11 @@
                 <form>
                     <div class="form-group">
                         <label for="nome">Nome</label>
-                    <input type="text" name="nome" id=" nome" class="form-control" placeholder="Digite seu nome" required>
+                    <input type="text" name="nome" id=" nome" class="form-control" placeholder="Leonardo Da Vinci" required autofocus readonly>
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="leonardo@davinci.com.br" required>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="leonardo@davinci.com.br" required disabled>
                     </div>
                     <div class="form-group">
                         <label for="date">Data de Nascimento</label>
@@ -73,10 +73,79 @@
                         <label for="estados">Estado</label>
                         <select name="estado" id="estado">
                             <option value="SP">São Paulo</option>
-                            <option value="MG">Minas Gerais</option>
+                            <option value="MG" selected>Minas Gerais</option>
                             <option value="RJ">Rio de Janeiro</option>
                         </select>
                     </div>
+
+                    <div class="form-group">
+                            <label for="estados">Estado</label>
+                            <select name="estado" id="estado">
+                                <optgroup label="Norte">
+                                    <option value="AM">Amazonas</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="TO">Tocantins</option>
+                                </optgroup>
+                                <optgroup label="Nordeste">
+                                    <option value="MA">Maranhão</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="BA">Bahia</option>
+                                </optgroup>
+                                <optgroup label="Centro-Oeste">
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="DF">Distrito Federal</option>
+                                </optgroup>
+                                <optgroup label="Sul">
+                                    <option value="PR">Paraná</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                </optgroup>
+                                <optgroup label="Sudeste">
+                                    <option value="SP" selected>São Paulo</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <input type="hidden" name="id" value="1">
+                        <div class="form-group">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="mes">Mês</label>
+                            <input type="month" name="mes" id="mes" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="semana">Semana</label>
+                            <input type="week" name="semana" id="semana" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Hora</label>
+                            <input type="time" name="time" id="time" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" list="navegadores">
+                            <datalist id="navegadores">
+                                <option value="Chrome">
+                                <option value="Firefox">
+                                <option value="Safari">
+                                <option value="Edge">
+                            </datalist>
+                        </div>
+                        
 
                     <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </form>
